@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mafia Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div id="fade" class="fade"></div>
+
+    <div class="topbar">
+      <div id="testInfo" class="testinfo"></div>
+      <div class="top-actions">
+        <button id="nextPlayerBtn" class="icon-btn" aria-label="Następny gracz">◦</button>
+        <button id="settingsBtn" class="icon-btn" aria-label="Ustawienia">⚙</button>
+        <button id="resetBtn" class="icon-btn" aria-label="Reset">↻</button>
+      </div>
+    </div>
+
+    <div id="screen" class="screen"></div>
+
+    <div id="joinModal" class="modal">
+      <div class="modal-card">
+        <div class="modal-title">Dołącz do gry</div>
+        <input id="joinNameInput" class="input" placeholder="Nazwa" />
+        <div class="modal-actions">
+          <button id="joinAddBtn" class="primary">Dodaj</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="settingsModal" class="modal">
+      <div class="modal-card">
+        <div class="modal-title">Ustawienia</div>
+        <div id="settingsGrid" class="settings-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
