@@ -26,6 +26,8 @@ Potem otwórz:
 http://localhost:8080
 ```
 
+
+
 ## Co już działa
 
 - lobby dla graczy
