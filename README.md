@@ -27,6 +27,8 @@ http://localhost:8080
 ```
 
 
+codex/locate-project-documentation-and-change-tracking-bpsucv
+=======
 ## Jak pobierać zmiany z Codex/GitHub
 
 Jeśli po `git pull` widzisz komunikat `Already up to date`, ale nie widzisz nowych zmian, zwykle oznacza to jedną z tych sytuacji:
@@ -59,6 +61,7 @@ git pull origin work
 ```
 
 Dla pracy na co dzień najwygodniej: raz klonujesz repo, a potem tylko `git pull` na tej samej gałęzi.
+ main
 
 ## Co już działa
 
