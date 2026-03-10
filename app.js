@@ -1,4 +1,4 @@
-const DEFAULT_PLAYER_NAMES = ["Patryk", "Sandra", "Franio", "Tila", "Marek", "Darek"];
+const DEFAULT_PLAYER_NAMES = ["Patryk", "Sandra", "Franio", "Tila", "Marek", "Robobabek"];
 
 const ROLE_META = {
   citizen: { name: "Obywatel", faction: "Miasto", revealText: "Nie masz mocy nocnej. Obserwuj i wyciągaj wnioski.", endColor: "white" },
