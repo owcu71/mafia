@@ -27,41 +27,6 @@ http://localhost:8080
 ```
 
 
-codex/locate-project-documentation-and-change-tracking-bpsucv
-=======
-## Jak pobierać zmiany z Codex/GitHub
-
-Jeśli po `git pull` widzisz komunikat `Already up to date`, ale nie widzisz nowych zmian, zwykle oznacza to jedną z tych sytuacji:
-
-- jesteś na innej gałęzi niż ta z nowymi commitami
-- lokalne repo nie ma podpiętego zdalnego repo (`origin`)
-- robisz `pull` z gałęzi, na której zmian jeszcze nie ma
-
-Sprawdź to po kolei:
-
-```bash
-git remote -v
-git branch -vv
-git fetch --all
-git log --oneline --decorate --graph -20
-```
-
-Jeśli nie masz ustawionego `origin`, dodaj go raz:
-
-```bash
-git remote add origin <URL_TWOJEGO_REPO>
-```
-
-Potem pobieraj zmiany z właściwej gałęzi, np. `main` albo `work`:
-
-```bash
-git pull origin main
-# albo
-git pull origin work
-```
-
-Dla pracy na co dzień najwygodniej: raz klonujesz repo, a potem tylko `git pull` na tej samej gałęzi.
- main
 
 ## Co już działa
 
