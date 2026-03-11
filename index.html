@@ -32,6 +32,7 @@
       <div class="modal-card">
         <div class="modal-title">Dołącz do gry</div>
         <input id="joinNameInput" class="input" placeholder="Nazwa" />
+        <label class="settings-row" style="margin-top:10px"><span>BOT</span><input id="joinBotCheckbox" type="checkbox"></label>
         <div class="modal-actions">
           <button id="joinAddBtn" class="primary">Dodaj</button>
         </div>
@@ -45,6 +46,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window.MAFIA_SYNC = {
+      firebaseDbUrl: "https://mafia-8bcd2-default-rtdb.europe-west1.firebasedatabase.app",
+      lobbyId: "main"
+    };
+  </script>
 
   <script src="app.js"></script>
 </body>
