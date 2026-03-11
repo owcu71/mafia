@@ -83,6 +83,7 @@ button{touch-action:manipulation}
 .tile,.end-tile{border:1px solid var(--border);border-radius:14px;background:#000;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(8px,2.4vw,12px);overflow:hidden;font-size:clamp(13px,3.9vw,15px);min-width:0}
 .tile{cursor:pointer;transition:border-color .2s,color .2s,background-color .2s,opacity .2s}
 .tile.dead{color:#9ca3af;border-color:#d4d4d8}
+.tile.join-slot{color:#71717a;border-color:#3f3f46}
 .tile.flash{animation:tileFlash .28s ease-out}
 @keyframes tileFlash{0%{border-color:#f87171;color:#fca5a5;opacity:1}100%{border-color:var(--border);color:#fff;opacity:.88}}
 .tile.disabled{cursor:default}
