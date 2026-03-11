@@ -12,7 +12,7 @@ Projekt działa jako prosty frontend bez bundlera i backendu. Cała logika gry z
 
 ## Jak uruchomić
 
-Najprościej otworzyć [index.html](/Users/patryk/Downloads/mafia_repaired2/index.html) w przeglądarce.
+Najprościej otworzyć `index.html` w przeglądarce.
 
 Jeśli chcesz uruchamiać projekt przez lokalny serwer, możesz użyć dowolnego prostego static server, np.:
 
@@ -66,9 +66,9 @@ Najważniejsze ograniczenia na teraz:
 
 ## Struktura plików
 
-- [index.html](/Users/patryk/Downloads/mafia_repaired2/index.html) - szkielet aplikacji
-- [styles.css](/Users/patryk/Downloads/mafia_repaired2/styles.css) - layout i styl UI
-- [app.js](/Users/patryk/Downloads/mafia_repaired2/app.js) - logika gry i renderowanie ekranów
+- `index.html` - szkielet aplikacji
+- `styles.css` - layout i styl UI
+- `app.js` - logika gry i renderowanie ekranów
 
 ## Plan rozwoju
 
@@ -76,3 +76,23 @@ Najważniejsze ograniczenia na teraz:
 - dalsze dopracowanie UI i UX
 - porządniejsza struktura kodu
 - przygotowanie wersji z backendem lub multiplayerem
+
+## Firebase sync (jedno lobby na wiele urządzeń)
+
+Aplikacja ma opcjonalną synchronizację przez **Firebase Realtime Database** (REST, bez SDK).
+
+1. W swoim projekcie Firebase włącz Realtime Database.
+2. Na czas testów ustaw reguły read/write dla ścieżki lobby.
+3. Przed `app.js` ustaw konfigurację globalną, np. w konsoli lub w `index.html`:
+
+```html
+<script>
+  window.MAFIA_SYNC = {
+    firebaseDbUrl: "https://TWOJ-PROJEKT-default-rtdb.europe-west1.firebasedatabase.app",
+    lobbyId: "main"
+  };
+</script>
+```
+
+Po ustawieniu `firebaseDbUrl`, każdy klient pod tym samym `lobbyId` współdzieli stan gry (zegary/fazy/akcje).
+
